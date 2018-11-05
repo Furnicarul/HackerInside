@@ -1,11 +1,10 @@
 doctype html
 html
+  block cool-config
   head
-    title HackerInside
-    meta(name="description", content="HackerInside")
+    title=myTitle
+    meta(name="description", content=myDescription)
     link(rel="stylesheet", href="style.css")
   body
-    include ../header/header
-  block awesome-content
-    section#one
-      include ../section/section
+    block awesome
+      include ../header/header
